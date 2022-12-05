@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Serhii Zenkin" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="time" id="time"> </div>
+      <h1>TO DO LIST</h1>
+      <div class="input-panel">
+        <input type="text" id="task-name-input" class="task-input" placeholder="Add New Task" />
+        <input type="submit" id="add-task-btn" class="add-task" title="Add Task" value="">
+      </div>
+      <div class="filter-panel">
+        <div class="filter-panel-block">
+          <img src="./icons/uncomleted_symbol.png" alt="symbol of uncompletion">
+          <span class="filter" id="showUncompleted-btn"> Undone </span>
+        </div>
+        <div class="filter-panel-block">
+          <img src="./icons/completed_symbol.png" alt="symbol of uncompletion">
+          <span class="filter" id="showCompleted-btn"> Done </span>
+        </div>
+        <div class="filter-panel-block">
+          <img src="./icons/see_all_symbol.png" alt="symbol of all">
+          <span class="filter" id="showAll-btn">All</span>
+        </div>
+      </div>
+      <div class="task-list">
+        <p id="start-message">There are no tasks</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
